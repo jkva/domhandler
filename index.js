@@ -95,6 +95,8 @@ DomHandler.prototype._addDomElement = function(element){
 
 	if(this._options.withStartIndices){
 		element.startIndex = this._parser.startIndex;
+		element.line = this._parser.line;
+		element.column = this._parser.column;
 	}
 	if(this._options.withEndIndices){
 		element.endIndex = this._parser.endIndex;
